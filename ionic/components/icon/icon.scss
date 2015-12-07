@@ -12,3 +12,9 @@ icon {
 icon[small] {
   font-size: 1.1em;
 }
+//colorized icons
+@each $color-name, $color-value in $colors {
+  icon[#{$color-name}]{
+    color: $color-value;
+  }
+}
